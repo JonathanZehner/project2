@@ -1,0 +1,791 @@
+/*-- Reset Rule --*/
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------- Font-families ----------------------*/
+@font-face {
+  font-family: 'arr-dep';
+  src: url('../fonts/arr-dep.ttf');
+}
+
+@font-face {
+  font-family: 'opificio';
+  src: url('../fonts/opificio-reg.ttf');
+}
+
+@font-face {
+  font-family: 'peace-boy';
+  src: url('../fonts/peace-boy-sans.ttf');
+}
+
+@font-face {
+  font-family: 'quattro';
+  src: url('../fonts/quattro-sans-reg.ttf');
+}
+
+/*-------------------- Begin Universal Styling ----------------------*/
+
+/*-- Fonts --*/
+body {
+  background-image: linear-gradient(to right, #749757, #b7c2c4, #549db1);
+  font-family: 'mr-eaves-xl-modern', 'quattrocento', sans-serif;
+  letter-spacing: .025em;
+  line-height: 20px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: normal bold 1.2rem/1.5 'arr-dep', sans-serif;
+  letter-spacing: 0.1rem;
+  padding-bottom: 10px;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+a {
+  letter-spacing: .1em;
+}
+
+/*-- Header --*/
+header {
+  background: #1E2223e3;
+  padding: 25px 0 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000000 !important;
+}
+
+header img {
+  padding-left: 2%;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+/*-- Hamburger Menu (begin) --*/
+.hamburger{
+  background:none;
+  border:0;
+  color:#e29c3e;
+  cursor:pointer;
+  font-size:1.4em;
+  font-weight:bold;
+  line-height:45px;
+  outline:none;
+  padding:5px 15px 0px 15px;
+  position:absolute;
+  right:0;
+  top:20%;
+  z-index:10000000000000;
+}
+
+.cross{
+  background:none;
+  border:0;
+  color:#e29c3e;
+  cursor:pointer;
+  font-size:3em;
+  font-weight:bold;
+  line-height:65px;
+  outline:none;
+  padding:7px 15px 0px 15px;
+  position:absolute;
+  right:0;
+  top:20%;
+  z-index:10000000000000;
+}
+
+.menu {
+  background-image: linear-gradient(to right, #749757e6, #b7c2c4, #549db1e6);
+  position:absolute;
+  text-align:center;
+  top: 100px;
+  width:100%;
+  z-index:1000000;
+}
+
+.menu ul {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.menu li {
+  border-bottom:#1E2223e3 1px solid;
+  display: block;
+  padding:15px 0 15px 0;
+}
+
+.menu li:hover {
+  background:#1e2223;
+  border-bottom:#B7C2C4 1px solid;
+  display: block;
+  padding:15px 0 15px 0;
+}
+
+.menu ul li a {
+  color:#549DB1;
+  font: bold 1.3rem/1 'arr-dep', sans-serif;
+  margin: 0px;
+  text-decoration:none;
+  text-shadow: 1px 1px #00000073;
+}
+
+.menu ul li a:hover {
+  color: #749757;
+  text-decoration:none;
+}
+/*-- Hamburger Menu (end) --*/
+
+
+/*-------------------- End Universal Styling ----------------------*/
+
+/*-------------------- Begin Home Page Styling ----------------------*/
+
+main {
+}
+
+.about-section,
+.current-projects,
+.contact-section {
+  background: #B7C2C48a;
+  padding: 25px 0;
+}
+
+.about-section h2,
+.about-section p,
+.current-projects,
+.contact-section {
+  padding: 0 2.5%;
+}
+
+/*-- Hero Image Section --*/
+.hero-image-section {
+  background: url(../images/background/digital-nomad.jpeg) no-repeat 0 100px;
+  background-attachment: fixed;
+  background-size: contain;
+  border-bottom: 3px solid #1E2223;
+  border-top: 3px solid #1E2223;
+  padding-top: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-image-section img {
+  height: 50%;
+  max-width: 100px;
+  width: 50%;
+}
+
+.hero-image-section h1 {
+  background: #1E2223c2;
+  color: #B7C2C4;
+  font: normal 400 1.5rem/1.5 josefin-sans, sans-serif;
+  text-shadow: 0 2px 6px #1E2223;
+}
+
+/*-- Container --*/
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/*-- Portfolio Section --*/
+.portfolio-section,
+.current-projects {
+  text-align: center;
+}
+
+.portfolio-section {
+  background: #1e2223bd;
+  color: #b7c2c4;
+  padding: 25px 0;
+  position: relative;
+}
+
+.portfolio-section h2 {
+  font-size: 2rem;
+}
+
+.portfolio-section h5 {
+  padding-top: 10px;
+}
+
+.designs {
+  border: 3px solid #b7c2c4;
+  box-shadow: 0 2px 6px #b7c2c4;
+  display: inline-block;
+  font-weight: bold;
+  height: 310px;
+  margin: 5px auto;
+  width: 225px;
+}
+
+.designs img {
+  height: 250px;
+  object-fit: contain;
+  object-position: top;
+  width: 210px;
+}
+
+.gallery img {
+  width: 210px;
+}
+
+.portfolio-link {
+  color: #b7c2c4;
+  letter-spacing: normal;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.portfolio-link:hover {
+  font-size: 1.3em;
+  text-decoration: underline;
+  transition: .2s;
+}
+
+span.lb-caption {
+  font-family: 'opificio';
+  font-size: 18px !important;
+  line-height: 1.5em !important;
+}
+
+span.lb-number {
+  font-family: 'arr-dep';
+  font-size: 16px !important;
+  letter-spacing: .1em;
+}
+
+.designs:nth-child(even) {
+  background: #549DB1a8;
+}
+
+.designs:nth-child(odd) {
+  background: #749757a8;
+}
+
+/*-- Section Break --*/
+.section-break {
+  background-attachment: fixed;
+  background-image: url(../images/background/digital-nomad-beach.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 3px solid #1E2223;
+  border-top: 3px solid #1E2223;
+  padding: 500px 0;
+}
+
+/*-- Current Projects --*/
+.proj {
+  border: 3px solid #1e2223bd;
+  box-shadow: 0 2px 6px #1e2223bd;
+  display: inline-block;
+  height: 500px;
+  padding: 25px 2%;
+  text-align: center;
+  width: 257px;
+}
+
+.proj img {
+  border: 2px solid #1E2223;
+  width: 250px;
+}
+
+.proj a {
+  background: #e29c3e;
+  border-radius: 3px;
+  color: #1E2223;
+  font-family: 'arr-dep', sans-serif;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.proj:nth-child(even) {
+  background: #549DB1a8;
+}
+
+.proj:nth-child(odd) {
+  background: #749757a8;
+}
+
+.fly .description {
+  padding-bottom: 20px;
+}
+
+.nwd .description {
+  padding-bottom: 48px;
+}
+
+/*-- Section Break Bottom --*/
+.section-break-bottom {
+  background-attachment: fixed;
+  background-image: url(../images/background/waterfall-bynatepatterson.gif);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 3px solid #1E2223;
+  border-top: 3px solid #1E2223;
+  padding: 350px 0;
+}
+
+/*-- Contact Form --*/
+.contact-section {
+  font-family: 'arr-dep', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h3 {
+  text-align: center;
+}
+
+.nwd-contact {
+  margin: 20px 0;
+}
+
+.nwd-contact div {
+  letter-spacing: .1em;
+  margin-bottom: 10px;
+}
+
+.label_input_wrap {
+  vertical-align: top;
+}
+
+.nwd-contact input,
+.nwd-contact textarea {
+  border: 1px solid #1E2223;
+  border-radius: 3px;
+  font-family: 'quattro', sans-serif;
+  padding: 9px 11px;
+}
+
+.title,
+.first-name,
+.last-name,
+.email,
+.tel {
+  margin: 20px auto;
+  max-width: 180px;
+  text-align: left;
+}
+
+.comments {
+  display: none;
+  padding: 20px 0;
+}
+
+.radiobutton {
+  display: none;
+}
+
+.radiobutton input {
+  margin: 0 5px;
+}
+
+.dropdown {
+  padding: 20px 0;
+}
+
+.dropdown select{
+  font-family: 'quattro', sans-serif;
+  padding: 5px;
+}
+
+.submit input,
+.reset input {
+  background: #e29c3e;
+  border: none;
+  border-radius: 3px;
+  color: #1E2223;
+  font: 16px/1.5 'arr-dep', sans-serif;
+  letter-spacing: .1em;
+  padding: 10px 25px;
+}
+
+.contact-section p a {
+  color: #549DB1;
+  text-decoration: none;
+  text-shadow: 0 1px 1px #1E2223;
+}
+
+iframe {
+  display: none;
+}
+
+.back-top {
+  float: right;
+  position: relative;
+  text-align: center;
+}
+
+/*-- Footer --*/
+footer {
+  background: #1E2223 url(../images/background/nwd-mountains.png) no-repeat right bottom;
+  clear: both;
+  color: #B7C2C4;
+  padding: 45px 2.5%;
+  text-align: center;
+}
+
+.footer-info {
+  padding: 20px 0;
+}
+
+/*-------------------- End Home Page Styling ----------------------*/
+
+/*-------------------- Begin About Page Styling ----------------------*/
+
+.about-page {
+  background-image: linear-gradient(to right, #749757, #b7c2c4, #549db1);
+  position: relative;
+}
+
+.about-page header {
+  margin-bottom: 10px;
+}
+
+.about-main {
+  background: #B7C2C48a;
+  height: 500px;
+  margin: 0 auto;
+  padding: 55px 25px;
+  position: relative;
+  text-align: center;
+  top: 135px;
+  width: 75%;
+}
+
+.about-page footer {
+  height: 100vh;
+  position: relative;
+  top: 135px;
+}
+/*-------------------- Begin About Page Styling ----------------------*/
+
+/*-------------------- Begin Media Queries ----------------------*/
+
+/*-- ****************** Begin Min-Width 420 Media Query *************** --*/
+@media (min-width: 420px) {
+
+  .title,
+  .first-name,
+  .last-name {
+    clear: left;
+    float: left;
+  }
+
+  .email,
+  .tel {
+    clear: right;
+    float: right;
+  }
+
+  .radiobutton {
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  .dropdown {
+    clear: both;
+  }
+}
+/*-- ****************** End Min-Width 420 Media Query *************** --*/
+
+/*-- ****************** Begin Min-Width 480 Media Query *************** --*/
+@media (min-width: 480px) {
+
+  .radiobutton .label_input_wrap {
+    display: inline;
+  }
+
+  footer {
+    display: flex;
+    text-align: center;
+  }
+
+  .footer-info,
+  .social-media,
+  .validation {
+    margin: auto;
+  }
+
+  .footer-info {
+    font: normal bold .6rem/1.5 'arr-dep', 'mr-eaves-xl-modern', sans-serif;
+    letter-spacing: .1rem;
+    padding: 20px 0;
+    width: 400px;
+  }
+
+  .copyright {
+    font: normal bold 1rem 'mr-eaves-xl-modern', sans-serif;
+  }
+
+  .social-media {
+    padding: 10px 2.5%;
+  }
+
+  .validation {
+      padding: 15px 2.5%;
+  }
+}
+/*-- ****************** End Min-Width 480 Media Query *************** --*/
+
+/*-- ****************** Begin Min-Width 490 Media Query *************** --*/
+@media (min-width: 490px) {
+
+  .comments {
+    clear: both;
+    display: block;
+  }
+
+  #comments {
+    display: flow-root;
+    margin: auto;
+  }
+}
+/*-- ****************** End Min-Width 490 Media Query *************** --*/
+
+/*-- ****************** Begin Min-Width 610 Media Query *************** --*/
+@media (min-width: 610px) {
+
+  .hero-image-section img {
+    max-width: 250px;
+  }
+
+  .hero-image-section h1 {
+    font-size: 3rem;
+  }
+
+  .title,
+  .first-name,
+  .last-name,
+  .comments,
+  .radiobutton,
+  .dropdown,
+  .submit,
+  .reset {
+    margin-left: 4%;
+  }
+
+  .email, .tel {
+    margin-right: 4%;
+  }
+
+
+  .submit,
+  .reset {
+    display: inline-block;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .contact-section p {
+    clear: both;
+    color: #1E2223;
+  }
+
+  .footer-info {
+    font-size: 1rem;
+  }
+}
+/*-- ****************** End Min-Width 610 Media Query *************** --*/
+
+/*-- ****************** Begin Min-Width 640 Media Query *************** --*/
+@media (min-width: 640px) {
+
+  iframe {
+    display: block;
+  }
+}
+/*-- ****************** End Min-Width 640 Media Query *************** --*/
+
+/*-- ****************** Begin Min-Width 700 Media Query *************** --*/
+@media (min-width: 700px) {
+
+  .contact-section {
+    width: 630px;
+  }
+
+  .title,
+  .first-name,
+  .last-name,
+  .email,
+  .tel {
+    width: 30%;
+  }
+}
+/*-- ****************** End Min-Width 700 Media Query *************** --*/
+
+/*-- ****************** Begin Min-Width 805 Media Query *************** --*/
+@media (min-width: 805px) {
+
+  .hero-image-section h1 {
+    font-size: 5rem;
+  }
+
+  h2, h3 {
+    font-size: 2rem;
+  }
+}
+/*-- ****************** End Min-Width 805 Media Query *************** --*/
+
+/*-- ****************** Start Min-Width 1000 Media Query *************** --*/
+@media (min-width: 1000px) {
+
+  .menu, .hamburger, .cross {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  header nav a {
+    color: #549DB1;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 20px;
+    text-decoration: underline;
+  }
+
+  header nav ul {
+    text-align: center;
+    font-family: arr-dep, sans-serif;
+  }
+
+  header nav ul li {
+    display: inline;
+  }
+
+  .nav-tright {
+    left: 80%;
+    padding-top: 10px;
+    position: fixed;
+    top: 25px;
+  }
+
+  .nav-tright a {
+      color: #749757;
+      font-size: 18px;
+      margin: 0 10px;
+  }
+
+  /*-- Unvisited Link --*/
+  .nav-tright a:link {
+    color: #749757;
+  }
+
+  .nav-main a:link {
+    color: #549DB1;
+  }
+
+  /*-- Visisted Link --*/
+  header nav a:visited {
+    color: #549DB1e3;
+    font-weight: bold;
+  }
+
+  /*-- Mouse Over Link --*/
+  header nav a:hover {
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: .2s;
+  }
+
+  .hero-image-section {
+    background: url(../images/background/digital-nomad.jpeg) no-repeat 0 120px;
+    background-attachment: fixed;
+    background-size: contain;
+    padding-bottom: 0;
+    padding-top: 125px;
+  }
+}
+/*-- ****************** End Min-Width 1000 Media Query *************** --*/
+
+/*-- ****************** Begin Min-Width 1055 Media Query *************** --*/
+@media (min-width: 1055px) {
+
+  .hero-image-section {
+    padding-bottom: 1%;
+  }
+}
+/*-- ****************** End Min-Width 1055 Media Query *************** --*/
+
+/*-- ****************** Begin Min-Width 1096 Media Query *************** --*/
+@media (min-width: 1096px) {
+
+  .mission {
+    padding-bottom: 25px;
+  }
+
+  .portfolio-section {
+    background: #1E2223;
+    color: #B7C2C4;
+    float: left;
+    height: 1095px;
+    padding: 0 0 25px 0;
+    top: 25px;
+    width: 60%;
+  }
+
+  .section-break,
+  .section-break-bottom {
+    clear: both;
+    display: none;
+  }
+
+  .section-break-bottom2 {
+    background-attachment: fixed;
+    background-image: url(../images/background/digital-nomad-paradise.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 3px solid #1E2223;
+    border-top: 3px solid #1E2223;
+    clear: both;
+    padding: 300px 0;
+  }
+
+  .aside {
+    background-color: #1E2223;
+    color: #B7C2C4;
+    float: left;
+    width: 360px;
+  }
+
+  .current-projects {
+    background: none;
+  }
+
+  .proj {
+    border: 3px solid #B7C2C4;
+    box-shadow: 0 2px 6px #B7C2C4;
+    height: 475px;
+  }
+
+  footer {
+    clear: both;
+  }
+}
+/*-- ****************** End Min-Width 1096 Media Query *************** --*/
+
+/*-- ****************** Begin Min-Width 1165 Media Query *************** --*/
+@media (min-width: 1165px) {
+
+  .hero-image-section {
+    padding-bottom: 5%;
+  }
+}
+/*-- ****************** End Min-Width 1165 Media Query *************** --*/
